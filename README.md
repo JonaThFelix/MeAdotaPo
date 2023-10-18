@@ -5,7 +5,7 @@ Foi desenvolvido na linguagem Python, e uso da biblioteca Kivy, onde através da
 
 📱Aplicação roda em Smartphone com sistema Android, deploy realizado através do Google Colab (última atualização em 17/10/2023).
 
-📌 Link do Apk para Download: https://drive.google.com/file/d/1MQqYI1eifCJ72-JqEJfuhmaQPx5KcO-H/view?usp=sharing
+
 
 ![gif](https://github.com/JonaThFelix/MeAdotaPo/assets/123984244/298ee755-cb18-4260-848e-f19e97ee34a0)
 
