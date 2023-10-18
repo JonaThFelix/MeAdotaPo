@@ -7,4 +7,5 @@ Foi desenvolvido na linguagem Python, e uso da biblioteca Kivy, onde através da
 
 📌 Link do Apk para Download: https://drive.google.com/file/d/1MQqYI1eifCJ72-JqEJfuhmaQPx5KcO-H/view?usp=sharing
 
+![202310172308 (1)](https://github.com/JonaThFelix/MeAdotaPo/assets/123984244/00a8e53b-03b4-42b1-b3ab-bb4b2c606aad)
 
