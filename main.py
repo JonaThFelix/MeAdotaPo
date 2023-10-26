@@ -3119,50 +3119,48 @@ def login_successful():
 
 
 class LoginWindow(Screen):
-    pass
-    # email = ObjectProperty(None)
-    # pwd = ObjectProperty(None)
+     email = ObjectProperty(None)
+     pwd = ObjectProperty(None)
 
-    # def validate(self):
+     def validate(self):
 
-    #     # validando se o e-mail já existe
-    #     if self.email.text not in users['Email'].unique():
-    #         pop_up()
-    #         login_successful()
-    #     else:
+         # validando se o e-mail já existe
+         if self.email.text not in users['Email'].unique():
+             pop_up()
+             login_successful()
+         else:
 
-    #         # alternando a tela atual para exibir o resultado da validação
-    #         screen_manager.current = 'logdata'
+             # alternando a tela atual para exibir o resultado da validação
+             screen_manager.current = 'logdata'
 
-    #         # redefinir o widget TextInput
-    #         self.email.text = ""
-    #         self.pwd.text = ""
+             # redefinir o widget TextInput
+             self.email.text = ""
+             self.pwd.text = ""
 
 
 class SignupWindow(Screen):
-    pass
-    # name2 = ObjectProperty(None)
-    # email = ObjectProperty(None)
-    # pwd = ObjectProperty(None)
+     name2 = ObjectProperty(None)
+     email = ObjectProperty(None)
+     pwd = ObjectProperty(None)
 
-    # def sign_up_button(self):
-    #     #criando um DataFrame com as informações
-    #     user = pd.DataFrame([[self.name2.text, self.email.text, self.pwd.text]],
-    #                         columns=['Name', 'Email', 'Password'])
-    #     if self.email.text != "":
-    #         if self.email.text not in users['Email'].unique():
+     def sign_up_button(self):
+         #criando um DataFrame com as informações
+         user = pd.DataFrame([[self.name2.text, self.email.text, self.pwd.text]],
+                             columns=['Name', 'Email', 'Password'])
+         if self.email.text != "":
+             if self.email.text not in users['Email'].unique():
 
-    #             user.to_csv('db/CadastroLogin.csv', mode='a',
-    #                         header=False, index=False)
-    #             account_creation()
-    #             screen_manager.current = 'login'
-    #             self.name2.text = ""
-    #             self.email.text = ""
-    #             self.pwd.text = ""
-    #         else:
-    #             pop_fun()
-    #     else:
-    #         wrong_email()
+                 user.to_csv('db/CadastroLogin.csv', mode='a',
+                             header=False, index=False)
+                 account_creation()
+                 screen_manager.current = 'login'
+                 self.name2.text = ""
+                 self.email.text = ""
+                 self.pwd.text = ""
+             else:
+                 pop_fun()
+         else:
+             wrong_email()
 
 
 class LogDataWindow(Screen):
