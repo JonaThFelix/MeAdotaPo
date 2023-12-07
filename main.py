@@ -3015,23 +3015,26 @@ class RedefinirSenha(Screen):
 class Pagamento(Screen):
     pass
 
-class PaginaDezesete(Screen):
-    pass
+# Telas prontas do início do projeto, tivemos que mudar o rumo e preferi deixar as classes caso houvesse necessidade.
 
-class PaginaDezoito(Screen):
-    pass
+# class PaginaDezesete(Screen):
+#     pass
 
-class PaginaDezenove(Screen):
-    pass
+# class PaginaDezoito(Screen):
+#     pass
 
-class PaginaVinte(Screen):
-    pass
+# class PaginaDezenove(Screen):
+#     pass
 
-class PaginaVinteUm(Screen):
-    pass
+# class PaginaVinte(Screen):
+#     pass
 
-class PaginaVinteDois(Screen):
-    pass
+# class PaginaVinteUm(Screen):
+#     pass
+
+# class PaginaVinteDois(Screen):
+#     pass
+
 
 # Conjunto de Classes do App
 class AppRelativeLayout(RelativeLayout):
@@ -3240,12 +3243,15 @@ class AdotaPo(App):
         screen_manager1.add_widget(EsqueciSenha(name='EsqueciSenha'))
         screen_manager1.add_widget(RedefinirSenha(name='RedefinirSenha'))
         screen_manager1.add_widget(Pagamento(name='Pagamento'))
-        screen_manager1.add_widget(PaginaDezesete(name='Page 17'))
-        screen_manager1.add_widget(PaginaDezoito(name='Page 18'))
-        screen_manager1.add_widget(PaginaDezenove(name='Page 19'))
-        screen_manager1.add_widget(PaginaVinte(name='Page 20'))
-        screen_manager1.add_widget(PaginaVinteUm(name='Page 21'))
-        screen_manager1.add_widget(PaginaVinteDois(name='Page 22'))
+
+        # Telas prontas do início do projeto, tivemos que mudar o rumo e preferi deixar as classes caso houvesse necessidade.
+        
+        # screen_manager1.add_widget(PaginaDezesete(name='Page 17'))
+        # screen_manager1.add_widget(PaginaDezoito(name='Page 18'))
+        # screen_manager1.add_widget(PaginaDezenove(name='Page 19'))
+        # screen_manager1.add_widget(PaginaVinte(name='Page 20'))
+        # screen_manager1.add_widget(PaginaVinteUm(name='Page 21'))
+        # screen_manager1.add_widget(PaginaVinteDois(name='Page 22'))
         
         return screen_manager1
 
